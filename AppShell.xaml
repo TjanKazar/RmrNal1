@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RmrNal1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RmrNal1"
+    Shell.FlyoutBehavior="Disabled"
+    Title="RmrNal1">
+
+    <ShellContent
+        Title="Glavna Stran"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+    Title="Glavna Stran"
+    ContentTemplate="{DataTemplate local:NewPage1}"
+    Route="NewContent1" />
+
+</Shell>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RmrNal1.NewPage1"
+             Title="Učni načrt">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Style for all Labels -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="white" />
+                <!-- Set default text color here -->
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Grid BackgroundColor="#006285"
+              Margin="10">
+            <!-- Define Columns -->
+            <Grid.ColumnDefinitions
+                >
+                <ColumnDefinition Width="*"
+                                />
+                <!-- First Column -->
+                <ColumnDefinition Width="*"/>
+                <!-- Second Column -->
+               
+            </Grid.ColumnDefinitions>
+
+            <!-- Define Rows -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"
+                               />
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header Row -->
+            <Label Text="  3. letnik" 
+               Grid.Row="0" Grid.Column="0"/>
+
+            <!-- Row 1 -->
+            <Label Text="   Zimski" 
+               Grid.Row="1" Grid.Column="0"
+                   />
+            
+
+            <!-- Row 2 -->
+            <Label Text="PREDMET" 
+                   FontAttributes="Bold"
+               Grid.Row="2" Grid.Column="0" 
+                  HorizontalOptions="Center" />
+            
+            <Label Text="ECTS" 
+                   FontAttributes="Bold"
+               Grid.Row="2" Grid.Column="1"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Upravljanje IKT" 
+    Grid.Row="3" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="Razvoj movilnih rešitev" 
+    Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" />
+
+            <Label Text="Razvoj informacijskih storitev" 
+Grid.Row="5" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="Portali in sistemi znanja" 
+Grid.Row="6" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="izbirni predmet II" 
+Grid.Row="7" Grid.Column="0"
+                   HorizontalOptions="Center" />
+            <Label Text="izbirni predmet III" 
+Grid.Row="8" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="  Letni" 
+Grid.Row="9" Grid.Column="0" 
+                   />
+            <Label Text="PREDMET"
+                   FontAttributes="Bold"
+Grid.Row="10" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="ECTS"
+                   FontAttributes="Bold"
+Grid.Row="10" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            <Label Text="Diplomsko delo" 
+Grid.Row="11" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="Prosto izbirni predmet IV" 
+Grid.Row="12" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="Praktično usposabljanje" 
+Grid.Row="13" Grid.Column="0" 
+                   HorizontalOptions="Center" />
+            <Label Text="5" 
+    Grid.Row="3" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="5" 
+    Grid.Row="4" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+
+            <Label Text="5" 
+Grid.Row="5" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            <Label Text="5" 
+Grid.Row="6" Grid.Column="1"
+                   HorizontalOptions="Center" />
+            <Label Text="5" 
+Grid.Row="7" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            <Label Text="5" 
+Grid.Row="8" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            
+           
+            <Label Text="10" 
+Grid.Row="11" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            <Label Text="5" 
+Grid.Row="12" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+            <Label Text="15" 
+Grid.Row="13" Grid.Column="1" 
+                   HorizontalOptions="Center" />
+
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

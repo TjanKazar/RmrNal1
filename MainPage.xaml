@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RmrNal1.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView >
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Label
+                    TextColor="#006385"
+                    Text="Prijava"
+                    FontSize="Large"
+                    >
+                    
+                </Label>
+                <Entry
+                    x:Name="usernameField"
+                    Placeholder="Uporabniško ime">
+                </Entry>
+                <Entry
+                    x:Name="passwordField"
+                    Placeholder="Geslo"
+                    IsPassword="True">
+                </Entry>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <VerticalStackLayout 
+            Padding="0,20"
+            Spacing="10"
+            HorizontalOptions="Center"
+            VerticalOptions="End">
+            <Button
+                Clicked="handleLogin"
+                Text="Prijava"
+                 />
+            <Button
+                Text="Vizitka"
+                Clicked="VizitkaOnClick"
+                WidthRequest="200"
+                BackgroundColor="LightBlue" />
+        </VerticalStackLayout>
+        
+        
+
+    </Grid>
+
+</ContentPage>
