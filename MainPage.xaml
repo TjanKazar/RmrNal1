@@ -22,12 +22,16 @@
                 </Label>
                 <Entry
                     x:Name="usernameField"
-                    Placeholder="Uporabniško ime">
+                    Placeholder="Uporabniško ime"
+                    Text="{Binding UserName}">
+                
                 </Entry>
                 <Entry
                     x:Name="passwordField"
                     Placeholder="Geslo"
-                    IsPassword="True">
+                    IsPassword="True"
+                    Text="{Binding UserPass}">
+
                 </Entry>
             </VerticalStackLayout>
         </ScrollView>

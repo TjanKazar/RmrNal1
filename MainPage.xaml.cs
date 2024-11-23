@@ -1,9 +1,14 @@
-﻿namespace RmrNal1
+﻿
+
+using Firebase.Auth;
+
+namespace RmrNal1
 {
 	public partial class MainPage : ContentPage
 	{
-		string cUser = "username";
-		string cPass = "geslo";
+		string apiKey = @"AIzaSyC63Kj9zh8wk3Ecafq9OuzkUaNVrlrtIuk";
+		public string cUser;
+		public string cPass;
 		public MainPage()
 		{
 			InitializeComponent();
@@ -12,10 +17,21 @@
 
 		private async void handleLogin(object sender, EventArgs e)
 		{
-			if (cUser == usernameField.Text && cPass == passwordField.Text)
+			cUser = usernameField.Text;
+			cPass = passwordField.Text;
+			await DisplayAlert("loggin attempt", "username: " + cUser + " password : " + cPass, "OK");
+			try
 			{
+				var authProvider = new FirebaseAuthProvider(new FirebaseConfig(apiKey));
+				var auth = await authProvider.SignInWithEmailAndPasswordAsync(cUser, cPass);
+				string token = auth.FirebaseToken;
 				await Navigation.PushAsync(new NewPage1());
 			}
+			catch (Exception ex)
+			{
+				await DisplayAlert("Login Error", ex.Message, "OK");
+			}
+		
 		}
 		private async void VizitkaOnClick(object sender, EventArgs e)
 		{
