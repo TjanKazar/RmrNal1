@@ -18,7 +18,7 @@
                     Text="Prijava"
                     FontSize="Large"
                     >
-                    
+
                 </Label>
                 <Entry
                     x:Name="usernameField"
@@ -47,8 +47,8 @@
                 WidthRequest="200"
                 BackgroundColor="LightBlue" />
         </VerticalStackLayout>
-        
-        
+
+
 
     </Grid>
 

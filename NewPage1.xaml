@@ -6,28 +6,22 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!-- Style for all Labels -->
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="white" />
-                <!-- Set default text color here -->
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <VerticalStackLayout>
         <Grid BackgroundColor="#006285"
               Margin="10">
-            <!-- Define Columns -->
             <Grid.ColumnDefinitions
                 >
                 <ColumnDefinition Width="*"
                                 />
-                <!-- First Column -->
                 <ColumnDefinition Width="*"/>
-                <!-- Second Column -->
-               
+
             </Grid.ColumnDefinitions>
 
-            <!-- Define Rows -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"
                                />
@@ -46,22 +40,19 @@
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
 
-            <!-- Header Row -->
             <Label Text="  3. letnik" 
                Grid.Row="0" Grid.Column="0"/>
 
-            <!-- Row 1 -->
             <Label Text="   Zimski" 
                Grid.Row="1" Grid.Column="0"
                    />
-            
 
-            <!-- Row 2 -->
+
             <Label Text="PREDMET" 
                    FontAttributes="Bold"
                Grid.Row="2" Grid.Column="0" 
                   HorizontalOptions="Center" />
-            
+
             <Label Text="ECTS" 
                    FontAttributes="Bold"
                Grid.Row="2" Grid.Column="1"
@@ -126,8 +117,8 @@ Grid.Row="7" Grid.Column="1"
             <Label Text="5" 
 Grid.Row="8" Grid.Column="1" 
                    HorizontalOptions="Center" />
-            
-           
+
+
             <Label Text="10" 
 Grid.Row="11" Grid.Column="1" 
                    HorizontalOptions="Center" />

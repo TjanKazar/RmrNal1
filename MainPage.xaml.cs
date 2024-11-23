@@ -9,7 +9,7 @@
 			InitializeComponent();
 		}
 
-		
+
 		private async void handleLogin(object sender, EventArgs e)
 		{
 			if (cUser == usernameField.Text && cPass == passwordField.Text)
@@ -19,9 +19,9 @@
 		}
 		private async void VizitkaOnClick(object sender, EventArgs e)
 		{
-			
-				await Navigation.PushAsync(new NewPage2());
-			
+
+			await Navigation.PushAsync(new NewPage2());
+
 		}
 
 	}
