@@ -33,6 +33,8 @@
                     Text="{Binding UserPass}">
 
                 </Entry>
+
+               
             </VerticalStackLayout>
         </ScrollView>
 

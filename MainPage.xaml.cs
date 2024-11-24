@@ -1,11 +1,12 @@
-﻿
-
+﻿using FirebaseAdmin.Auth;
 using Firebase.Auth;
+using System.Net.Http;
 
 namespace RmrNal1
 {
 	public partial class MainPage : ContentPage
 	{
+		
 		string apiKey = @"AIzaSyC63Kj9zh8wk3Ecafq9OuzkUaNVrlrtIuk";
 		public string cUser;
 		public string cPass;
@@ -13,10 +14,9 @@ namespace RmrNal1
 		{
 			InitializeComponent();
 		}
-
-
 		private async void handleLogin(object sender, EventArgs e)
 		{
+			
 			cUser = usernameField.Text;
 			cPass = passwordField.Text;
 			await DisplayAlert("loggin attempt", "username: " + cUser + " password : " + cPass, "OK");
@@ -39,6 +39,7 @@ namespace RmrNal1
 			await Navigation.PushAsync(new NewPage2());
 
 		}
+		
 
 	}
 }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "319049180150",
+    "project_id": "rmrgoog-e6331",
+    "storage_bucket": "rmrgoog-e6331.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319049180150:android:b5aea4e530c4fadaf49dd7",
+        "android_client_info": {
+          "package_name": "maui.package"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319049180150-3djp2jm5guicuums1hm2nqe7qqgnuquj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "maui.package",
+            "certificate_hash": "5e40b40cb24ebc2659af0b8a2a0a65ec2fdb9f86"
+          }
+        },
+        {
+          "client_id": "319049180150-eghj6fiudcd4m3npiimc3i15cbsq585a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdCY1iWT1pNQXO-WmSY-FOP0SqvRWUYiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319049180150-eghj6fiudcd4m3npiimc3i15cbsq585a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
