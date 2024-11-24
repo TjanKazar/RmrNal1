@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RmrNal1
 {
-	class Predmet
+	public class Predmet
 	{
 		public Guid PredmetID { get; set; }
 		public string Naziv { get; set; }
